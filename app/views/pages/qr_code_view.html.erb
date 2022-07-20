@@ -1,0 +1,12 @@
+<div class="card text-center">
+   <div class="card-header">
+    <h4>Scan to decode the information</h4>
+  </div>
+  <div class="card-body">
+  <div class="container center">
+<%= @svg.html_safe %>
+</div>
+<div class="card-body">
+  <%= link_to 'Download QR code', qr_code_download_path, class:"btn btn-primary"  %>
+  </div>  </div>
+</div>

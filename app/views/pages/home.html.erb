@@ -1,10 +1,7 @@
-<h1 class="container fluid text-center">QR code generator</h1>
-
 <div class="card text-center">
   <div class="card-header">
-  Enter information for QR
+  <h4>Enter information to be encoded</h4>
   </div>
-
   <%= form_tag :qr_code_view, method: :get do |f| %>
     <div class="field">
       <%= label_tag '' %>
@@ -15,7 +12,4 @@
       <%= submit_tag 'Generate QR code', class:"btn btn-primary" %>
     </div>
   <% end %>
-  <div class="card-body">
-  <%= link_to 'Download QR code', qr_code_download_path, class:"btn btn-primary"  %>
-  </div>
 </div>
