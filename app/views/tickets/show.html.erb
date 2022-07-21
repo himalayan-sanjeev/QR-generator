@@ -1,2 +1,6 @@
-<h1>Tickets#show</h1>
-<p>Find me in app/views/tickets/show.html.erb</p>
+<div class="card text-center">
+  <div class="card-header">
+    <%= @svg.html_safe %>
+ </div>
+ <%= link_to 'Download QR', @svg, class:"btn btn-primary"  %>
+</div>
