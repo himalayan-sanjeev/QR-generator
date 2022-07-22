@@ -1,6 +1,6 @@
 <div class="card text-center">
   <div class="card-header">
-  <h4>QR</h4>
+  <h4>QR Tickets</h4>
   </div>
 
 <%= render partial:'book'%>  
@@ -17,8 +17,8 @@
   <tbody>
   <% @tickets.each do |tick| %>
     <tr>
-      <th scope="row"><%= tick.id %></th>
-      <td><%= tick.info %></td>
+      <th scope="row"><%= tick.unique_ticket_id %></th>
+      <td><%= tick.info.to_s %></td>
       <td><%= tick.created_at %></td>
       <td><%= link_to 'Show QR', tick, class:"btn btn-primary"  %></td>
     </tr>
